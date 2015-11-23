@@ -54,7 +54,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-get 'restaurants' => 'restaurants#index'
+#get 'restaurants' => 'restaurants#index'
+#post 'restaurants' => 'restaurants#create'
 resources :restaurants
 
 end
