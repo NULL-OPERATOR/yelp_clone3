@@ -30,6 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# gems aggiunte da me
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
@@ -39,6 +40,7 @@ gem 'spring-commands-rspec', group: :test
 
 gem 'shoulda' #permette di creare relazioni tra DB
 gem 'haml' #sostituisce il linguaggio html per ruby/views
+# fine gems aggiunte da me 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
