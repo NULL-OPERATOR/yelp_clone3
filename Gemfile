@@ -37,10 +37,10 @@ group :test do
 end
 gem 'rspec-collection_matchers'
 gem 'spring-commands-rspec', group: :test
-
+gem 'devise' # crea controller e model per user login
 gem 'shoulda' #permette di creare relazioni tra DB
 gem 'haml' #sostituisce il linguaggio html per ruby/views
-# fine gems aggiunte da me 
+# fine gems aggiunte da me
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
