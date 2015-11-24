@@ -54,9 +54,10 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-#get 'restaurants' => 'restaurants#index'
+#get 'restaurants' => 'restaurants#index' non mi servono piu perche' basta
+  #quello successivo
 #post 'restaurants' => 'restaurants#create'
-resources :restaurants
-
+resources :restaurants do
+  resources :reviews
 end
-
+end

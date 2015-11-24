@@ -31,8 +31,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'rspec-rails'
-gem 'capybara'
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+end
+
+gem 'shoulda' #permette di creare relazioni tra DB
 gem 'haml' #sostituisce il linguaggio html per ruby/views
 
 group :development, :test do
