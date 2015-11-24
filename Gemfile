@@ -34,7 +34,7 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
 end
-
+gem 'rspec-collection_matchers'
 gem 'spring-commands-rspec', group: :test
 
 gem 'shoulda' #permette di creare relazioni tra DB
