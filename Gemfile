@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use postgresql as the database for Active Record
@@ -35,6 +34,8 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
 end
+
+gem 'spring-commands-rspec', group: :test
 
 gem 'shoulda' #permette di creare relazioni tra DB
 gem 'haml' #sostituisce il linguaggio html per ruby/views
