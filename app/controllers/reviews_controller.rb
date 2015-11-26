@@ -7,8 +7,13 @@ class ReviewsController < ApplicationController
 
   def create
     @restaurant = Restaurant.find(params[:restaurant_id])
-    @restaurant.reviews.create(review_params)
-    redirect_to restaurants_path
+    # if @restaurant.reviews.empty?
+    #   flash[:notice] = 'Can only add one review'
+    #   redirect_to restaurants_path
+    # else
+      @restaurant.reviews.create(review_params)
+      redirect_to restaurants_path
+    # end
   end
 
   def review_params
